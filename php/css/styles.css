@@ -1,0 +1,304 @@
+/* will have css styles for the website */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--black);
+}
+
+
+main {
+    margin-bottom: 100px;
+}
+
+
+:root {
+    /*sets css variables for colours to make them easier to use*/
+    --black: #212529;
+    /* primary */
+    --yellow: #F1CB4C;
+    /* secondary */
+    --pink: #FB5D74;
+    /* secondary*/
+}
+
+
+/*HERO IMAGE/BANNER*/
+#hero-image {
+    /*creates a linear gradient to darken the background.*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+        url("../images/gummyworms.jpg");
+
+    /*sets a height*/
+    height: 250px;
+
+    /*positions and centers the image*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--yellow);
+    text-shadow: 4px, 4px, var(--black);
+}
+
+#hero-text>h1 {
+    font-family: "Slackey", sans-serif;
+    font-size: 3em
+}
+
+#hero-text>h5 {
+    color: white;
+}
+
+/*END OF HERO IMAGE/BANNER*/
+
+/*Sets the colour for the Nav Links*/
+.nav-link {
+    color: var(--pink) !important;
+}
+
+.nav-link:hover {
+    color: var(--yellow) !important;
+}
+
+/*end of nav links*/
+
+/*FILTER*/
+
+.accordion-button {
+    background-color: var(--black) !important;
+    color: var(--yellow) !important;
+    font-family: "Slackey", sans-serif;
+}
+
+.collapsed {
+    background-color: var(--black) !important;
+}
+
+.accordion-button.collapsed::after {
+    background: url("../images/sort-down-solid.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background: url("../images/sort-down-solid.svg") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+
+.form-check-input:checked {
+    background-color: var(--pink) !important;
+    border-color: var(--pink) !important;
+}
+
+
+/*end of FILTER*/
+
+/* SHOP SECTION */
+#shop {
+    padding: 30px;
+}
+
+.card {
+    margin-top: 30px;
+}
+
+.card-img-top {
+    height: 235px;
+}
+
+.shop-card-body {
+    height: 250px;
+}
+
+
+.quantity {
+    width: 50px;
+    height: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--pink) !important;
+    border: var(--pink) !important;
+    color: var(--black) !important;
+}
+
+.btn-info {
+    background-color: var(--pink) !important;
+    border: var(--pink) !important;
+    color: var(--black) !important;
+
+}
+
+.btn-primary:hover {
+    opacity: 0.75 !important;
+}
+
+.btn-info:hover {
+    opacity: 0.75 !important;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/*END OF SHOP SECTION*/
+
+
+/* MODALS */
+
+.modal-header {
+    background-color: var(--black);
+}
+
+.modal-title {
+    font-family: "Slackey", sans-serif;
+    color: var(--yellow);
+}
+
+.btn-close {
+    background-color: var(--pink) !important;
+    opacity: 1 !important;
+}
+
+.btn-close:hover {
+    opacity: 0.75 !important;
+}
+
+.btn-secondary {
+    background-color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+    color: var(--black) !important;
+}
+
+.btn-secondary:hover {
+    opacity: 0.75 !important;
+}
+
+
+/* ADD PRODUCTS CSS */
+.info-block {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+#add-products-header {
+    font-family: "Slackey", sans-serif;
+    color: var(--pink);
+}
+
+#category-checkboxes {
+    padding-left: 5px;
+}
+
+
+/*CART*/
+
+.total {
+    margin-right: 20vw;
+}
+
+.checkout-button {
+    margin-right: 20vw !important;
+}
+
+
+th {
+    border-bottom-width: 0px !important;
+}
+
+td {
+    border-bottom-width: 0px !important;
+    padding-bottom: 0px !important;
+}
+/*END OF CART*/
+
+/* Create Account */
+
+.card-header {
+    color: var(--yellow) !important;
+    font-family: "Slackey", sans-serif;
+    font-size: 1.25em;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--black);
+    color: #fff;
+}
+
+.username-color {
+    font-weight: bold;
+    color: var(--pink);
+}
+
+/* PRIVACY AGREEMNET */
+
+.article {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--pink);
+}
+
+#privacy-agreement-container h4 {
+    font-weight: bold;
+}
+
+#privacy-agreement-container {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Account */
+
+#account-info-title {
+    font-family: "Slackey", sans-serif;
+    color: var(--pink);
+}
+
+
+.account-link {
+    color: var(--pink) !important;
+    text-decoration: none !important;
+}
+
+.account-td {
+    padding-bottom: 8px !important;
+}
+
+.account-th {
+    background-color: var(--yellow) !important;
+}
+
+#account-menu a:hover {
+    color: var(--yellow) !important;
+}
+
+#edit-info-button {
+    color: var(--pink);
+}
+
+/*Order History*/
+
+#order-title {
+    font-family: "Slackey", sans-serif;
+    color: var(--pink);
+
+}
+
+/*order confirmation */
+
+#order-confirm-title { 
+    font-family: "Slackey", sans-serif;
+    color: var(--pink);
+}
+
